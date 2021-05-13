@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6369ec89484b4ce395f90d9f50c81a4e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6369ec89484b4ce395f90d9f50c81a4e" ></div>
+        
+</body>
+<script>    
+    
+            var map_6369ec89484b4ce395f90d9f50c81a4e = L.map(
+                "map_6369ec89484b4ce395f90d9f50c81a4e",
+                {
+                    center: [41.5, -115.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a4bf17346d03411c8d1b000e18c54875 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+            var circle_marker_5a2aedb73df54ba5a5971388428f7ea5 = L.circleMarker(
+                [48.7767982, -121.810997],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_c8927626e8694f74b3949e18a9528e5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87d60356f77244faa460240d1130e52a = $(`<div id="html_87d60356f77244faa460240d1130e52a" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:48.7767982, long:-121.810997, elevation:3285.0</div>`)[0];
+            popup_c8927626e8694f74b3949e18a9528e5b.setContent(html_87d60356f77244faa460240d1130e52a);
+        
+
+        circle_marker_5a2aedb73df54ba5a5971388428f7ea5.bindPopup(popup_c8927626e8694f74b3949e18a9528e5b)
+        ;
+
+        
+    
+    
+            var circle_marker_1af43d35c1b9450ba872536657424c05 = L.circleMarker(
+                [48.1118011, -121.1110001],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_fb509440323d426fa9a89bf18f2ee430 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20aedc924ece4f9aba15ce7972c65830 = $(`<div id="html_20aedc924ece4f9aba15ce7972c65830" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:48.1118011, long:-121.1110001, elevation:3213.0</div>`)[0];
+            popup_fb509440323d426fa9a89bf18f2ee430.setContent(html_20aedc924ece4f9aba15ce7972c65830);
+        
+
+        circle_marker_1af43d35c1b9450ba872536657424c05.bindPopup(popup_fb509440323d426fa9a89bf18f2ee430)
+        ;
+
+        
+    
+    
+            var circle_marker_5eabd3f71a2b4778ba887f4177f75799 = L.circleMarker(
+                [46.8698006, -121.7509995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_bc5d50be3568479a88fd1ed8ea9276b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dac4b4d183564bdca2766ae2ef019528 = $(`<div id="html_dac4b4d183564bdca2766ae2ef019528" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:46.8698006, long:-121.7509995, elevation:4392.0</div>`)[0];
+            popup_bc5d50be3568479a88fd1ed8ea9276b7.setContent(html_dac4b4d183564bdca2766ae2ef019528);
+        
+
+        circle_marker_5eabd3f71a2b4778ba887f4177f75799.bindPopup(popup_bc5d50be3568479a88fd1ed8ea9276b7)
+        ;
+
+        
+    
+    
+            var circle_marker_80ae1cd3e30b4e2790739b9a47a63769 = L.circleMarker(
+                [46.1997986, -122.1809998],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_d3726c9387574c85803bb00b1354deb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cbd82516c8640b083820e1e55004f4f = $(`<div id="html_1cbd82516c8640b083820e1e55004f4f" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:46.1997986, long:-122.1809998, elevation:2549.0</div>`)[0];
+            popup_d3726c9387574c85803bb00b1354deb0.setContent(html_1cbd82516c8640b083820e1e55004f4f);
+        
+
+        circle_marker_80ae1cd3e30b4e2790739b9a47a63769.bindPopup(popup_d3726c9387574c85803bb00b1354deb0)
+        ;
+
+        
+    
+    
+            var circle_marker_b74f85578b664d91b238ffb8a9f1faa0 = L.circleMarker(
+                [46.2057991, -121.4909973],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_e20faf470aee419abecf0d4cdd82d1f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e70b0c68ca34c478c1584f7481429c3 = $(`<div id="html_2e70b0c68ca34c478c1584f7481429c3" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:46.2057991, long:-121.4909973, elevation:3742.0</div>`)[0];
+            popup_e20faf470aee419abecf0d4cdd82d1f9.setContent(html_2e70b0c68ca34c478c1584f7481429c3);
+        
+
+        circle_marker_b74f85578b664d91b238ffb8a9f1faa0.bindPopup(popup_e20faf470aee419abecf0d4cdd82d1f9)
+        ;
+
+        
+    
+    
+            var circle_marker_82cff727cae64a1591f9fa601471795e = L.circleMarker(
+                [45.8797989, -122.0810013],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_c600512344a941d5a23a358a9f4998bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_338676dc20c04a869a28093f8d1863cb = $(`<div id="html_338676dc20c04a869a28093f8d1863cb" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:45.8797989, long:-122.0810013, elevation:1329.0</div>`)[0];
+            popup_c600512344a941d5a23a358a9f4998bd.setContent(html_338676dc20c04a869a28093f8d1863cb);
+        
+
+        circle_marker_82cff727cae64a1591f9fa601471795e.bindPopup(popup_c600512344a941d5a23a358a9f4998bd)
+        ;
+
+        
+    
+    
+            var circle_marker_6c3cc0fc5f50471eb7d5e532ec601acd = L.circleMarker(
+                [45.9297981, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_770cff34dce6475d8e61961a2b65f350 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ef7afc1f1594359aad57c86deb0871b = $(`<div id="html_3ef7afc1f1594359aad57c86deb0871b" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:45.9297981, long:-121.8209991, elevation:1806.0</div>`)[0];
+            popup_770cff34dce6475d8e61961a2b65f350.setContent(html_3ef7afc1f1594359aad57c86deb0871b);
+        
+
+        circle_marker_6c3cc0fc5f50471eb7d5e532ec601acd.bindPopup(popup_770cff34dce6475d8e61961a2b65f350)
+        ;
+
+        
+    
+    
+            var circle_marker_733debd1ae314772a20138a871790efd = L.circleMarker(
+                [45.3737984, -121.6910019],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_2cfb4c98a50541919869eff856aa7624 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5c97928090c4733899ff106264e6769 = $(`<div id="html_b5c97928090c4733899ff106264e6769" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:45.3737984, long:-121.6910019, elevation:3426.0</div>`)[0];
+            popup_2cfb4c98a50541919869eff856aa7624.setContent(html_b5c97928090c4733899ff106264e6769);
+        
+
+        circle_marker_733debd1ae314772a20138a871790efd.bindPopup(popup_2cfb4c98a50541919869eff856aa7624)
+        ;
+
+        
+    
+    
+            var circle_marker_6afa8669f05b4d83af88c56d0e930c92 = L.circleMarker(
+                [44.6917992, -121.8010025],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_3f0e32ea201944bc9f50017359f4e873 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2be1ce9937104e98aea0b30a0862ba1a = $(`<div id="html_2be1ce9937104e98aea0b30a0862ba1a" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:44.6917992, long:-121.8010025, elevation:3199.0</div>`)[0];
+            popup_3f0e32ea201944bc9f50017359f4e873.setContent(html_2be1ce9937104e98aea0b30a0862ba1a);
+        
+
+        circle_marker_6afa8669f05b4d83af88c56d0e930c92.bindPopup(popup_3f0e32ea201944bc9f50017359f4e873)
+        ;
+
+        
+    
+    
+            var circle_marker_1fb9a8113c9646d88c7a0b402192ca95 = L.circleMarker(
+                [44.4197998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_0b45e91c1fcc48f5bf4a0d04819d05a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_882a2cf00d18489b87662a488eaf9d4e = $(`<div id="html_882a2cf00d18489b87662a488eaf9d4e" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:44.4197998, long:-121.7710037, elevation:1230.0</div>`)[0];
+            popup_0b45e91c1fcc48f5bf4a0d04819d05a6.setContent(html_882a2cf00d18489b87662a488eaf9d4e);
+        
+
+        circle_marker_1fb9a8113c9646d88c7a0b402192ca95.bindPopup(popup_0b45e91c1fcc48f5bf4a0d04819d05a6)
+        ;
+
+        
+    
+    
+            var circle_marker_818f7625b59d47edbdf58b3355c2cad7 = L.circleMarker(
+                [44.3797989, -121.9309998],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_e7b268f31c034a3cadaa304e77819e08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fef9e1775bff4ae2860c4607a739bd2a = $(`<div id="html_fef9e1775bff4ae2860c4607a739bd2a" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:44.3797989, long:-121.9309998, elevation:1664.0</div>`)[0];
+            popup_e7b268f31c034a3cadaa304e77819e08.setContent(html_fef9e1775bff4ae2860c4607a739bd2a);
+        
+
+        circle_marker_818f7625b59d47edbdf58b3355c2cad7.bindPopup(popup_e7b268f31c034a3cadaa304e77819e08)
+        ;
+
+        
+    
+    
+            var circle_marker_037758d12e22403cbc4a8852b8a67199 = L.circleMarker(
+                [44.3317986, -121.8310013],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_0dcaf256e1424c539b1149395ea30282 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0b9494d32914eba8375e59e2de42151 = $(`<div id="html_c0b9494d32914eba8375e59e2de42151" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:44.3317986, long:-121.8310013, elevation:2376.0</div>`)[0];
+            popup_0dcaf256e1424c539b1149395ea30282.setContent(html_c0b9494d32914eba8375e59e2de42151);
+        
+
+        circle_marker_037758d12e22403cbc4a8852b8a67199.bindPopup(popup_0dcaf256e1424c539b1149395ea30282)
+        ;
+
+        
+    
+    
+            var circle_marker_02688283c19c45759dc8818a131a0cf2 = L.circleMarker(
+                [44.2848015, -121.8410034],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_d3a56ea6cfca4aa592f97b5473ad4792 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abaa19ace8744b9593d233af6b71195b = $(`<div id="html_abaa19ace8744b9593d233af6b71195b" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:44.2848015, long:-121.8410034, elevation:2095.0</div>`)[0];
+            popup_d3a56ea6cfca4aa592f97b5473ad4792.setContent(html_abaa19ace8744b9593d233af6b71195b);
+        
+
+        circle_marker_02688283c19c45759dc8818a131a0cf2.bindPopup(popup_d3a56ea6cfca4aa592f97b5473ad4792)
+        ;
+
+        
+    
+    
+            var circle_marker_2d2368007d9240c69a89d59f00ff924d = L.circleMarker(
+                [44.1697998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_100e1dd0963841cfb35c2b85ce0a2047 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bbf763e853d4029acfe793b449314d9 = $(`<div id="html_3bbf763e853d4029acfe793b449314d9" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:44.1697998, long:-121.7710037, elevation:3074.0</div>`)[0];
+            popup_100e1dd0963841cfb35c2b85ce0a2047.setContent(html_3bbf763e853d4029acfe793b449314d9);
+        
+
+        circle_marker_2d2368007d9240c69a89d59f00ff924d.bindPopup(popup_100e1dd0963841cfb35c2b85ce0a2047)
+        ;
+
+        
+    
+    
+            var circle_marker_ee941aaa5af147d085ebff13ff192aab = L.circleMarker(
+                [44.0998001, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_f3c26dc5072946c39041caff360ab854 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72da66a17ac948239cce0f16085503ea = $(`<div id="html_72da66a17ac948239cce0f16085503ea" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:44.0998001, long:-121.7710037, elevation:3157.0</div>`)[0];
+            popup_f3c26dc5072946c39041caff360ab854.setContent(html_72da66a17ac948239cce0f16085503ea);
+        
+
+        circle_marker_ee941aaa5af147d085ebff13ff192aab.bindPopup(popup_f3c26dc5072946c39041caff360ab854)
+        ;
+
+        
+    
+    
+            var circle_marker_adc1f81c5fc943dfa70edd945a2a8425 = L.circleMarker(
+                [43.9788017, -121.6809998],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_9f41ce985e4b4ac084c6a08eebf7d7b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69dcb2f9c0c54914a2814814689130c4 = $(`<div id="html_69dcb2f9c0c54914a2814814689130c4" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.9788017, long:-121.6809998, elevation:2763.0</div>`)[0];
+            popup_9f41ce985e4b4ac084c6a08eebf7d7b6.setContent(html_69dcb2f9c0c54914a2814814689130c4);
+        
+
+        circle_marker_adc1f81c5fc943dfa70edd945a2a8425.bindPopup(popup_9f41ce985e4b4ac084c6a08eebf7d7b6)
+        ;
+
+        
+    
+    
+            var circle_marker_a1eaa460c9bd48cf87b9107639739f38 = L.circleMarker(
+                [43.7218018, -121.2210007],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_823647cdca0447aba0a67bb2f93f14dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb3159560a6c4dca979748ecfd714418 = $(`<div id="html_eb3159560a6c4dca979748ecfd714418" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.7218018, long:-121.2210007, elevation:2434.0</div>`)[0];
+            popup_823647cdca0447aba0a67bb2f93f14dd.setContent(html_eb3159560a6c4dca979748ecfd714418);
+        
+
+        circle_marker_a1eaa460c9bd48cf87b9107639739f38.bindPopup(popup_823647cdca0447aba0a67bb2f93f14dd)
+        ;
+
+        
+    
+    
+            var circle_marker_baa6cb176b9a40bfa286b46b1d9f737a = L.circleMarker(
+                [43.5698013, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_753ec821829849e4af4344b919009876 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1a06cd58ee84f888e4963bc93585c04 = $(`<div id="html_f1a06cd58ee84f888e4963bc93585c04" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.5698013, long:-121.8209991, elevation:2163.0</div>`)[0];
+            popup_753ec821829849e4af4344b919009876.setContent(html_f1a06cd58ee84f888e4963bc93585c04);
+        
+
+        circle_marker_baa6cb176b9a40bfa286b46b1d9f737a.bindPopup(popup_753ec821829849e4af4344b919009876)
+        ;
+
+        
+    
+    
+            var circle_marker_062dd88bf641449689ac6d11bd8c8fbc = L.circleMarker(
+                [43.5119019, -120.8610001],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_555b254142b8466dbe9967415db2b96f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a7b114b3c1a4ad28150834ba84231c2 = $(`<div id="html_1a7b114b3c1a4ad28150834ba84231c2" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.5119019, long:-120.8610001, elevation:1698.0</div>`)[0];
+            popup_555b254142b8466dbe9967415db2b96f.setContent(html_1a7b114b3c1a4ad28150834ba84231c2);
+        
+
+        circle_marker_062dd88bf641449689ac6d11bd8c8fbc.bindPopup(popup_555b254142b8466dbe9967415db2b96f)
+        ;
+
+        
+    
+    
+            var circle_marker_7e9c8d2973c24fed9fdc39fb95b3e2a3 = L.circleMarker(
+                [43.240799, -122.1009979],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_d547672658bb4515bc5956d25a249ccf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_409fcd09705640949389cdf3a26e3e76 = $(`<div id="html_409fcd09705640949389cdf3a26e3e76" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.240799, long:-122.1009979, elevation:1956.0</div>`)[0];
+            popup_d547672658bb4515bc5956d25a249ccf.setContent(html_409fcd09705640949389cdf3a26e3e76);
+        
+
+        circle_marker_7e9c8d2973c24fed9fdc39fb95b3e2a3.bindPopup(popup_d547672658bb4515bc5956d25a249ccf)
+        ;
+
+        
+    
+    
+            var circle_marker_b2b58dff186445e096f549ab84928b88 = L.circleMarker(
+                [43.4719009, -120.7509995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_85876ef6ce7940a3b44b7ec571084427 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d2268e32c5e45c08f68f0542a3611ad = $(`<div id="html_7d2268e32c5e45c08f68f0542a3611ad" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.4719009, long:-120.7509995, elevation:1711.0</div>`)[0];
+            popup_85876ef6ce7940a3b44b7ec571084427.setContent(html_7d2268e32c5e45c08f68f0542a3611ad);
+        
+
+        circle_marker_b2b58dff186445e096f549ab84928b88.bindPopup(popup_85876ef6ce7940a3b44b7ec571084427)
+        ;
+
+        
+    
+    
+            var circle_marker_95cd004eacb14e90abffceb450f881f9 = L.circleMarker(
+                [43.3609009, -120.6610031],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_9f3b84c2f3f5453bade5c2c11a861020 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34a960cb74bd49a58dbbf8b1b804d80e = $(`<div id="html_34a960cb74bd49a58dbbf8b1b804d80e" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.3609009, long:-120.6610031, elevation:1501.0</div>`)[0];
+            popup_9f3b84c2f3f5453bade5c2c11a861020.setContent(html_34a960cb74bd49a58dbbf8b1b804d80e);
+        
+
+        circle_marker_95cd004eacb14e90abffceb450f881f9.bindPopup(popup_9f3b84c2f3f5453bade5c2c11a861020)
+        ;
+
+        
+    
+    
+            var circle_marker_cea26e27609a46008c283400cc3b6e2a = L.circleMarker(
+                [42.9299011, -122.1210022],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_86b40a36d853493e9c1bcf066706a803 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18f9ae16863e44cebd14af9fd499f123 = $(`<div id="html_18f9ae16863e44cebd14af9fd499f123" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:42.9299011, long:-122.1210022, elevation:2487.0</div>`)[0];
+            popup_86b40a36d853493e9c1bcf066706a803.setContent(html_18f9ae16863e44cebd14af9fd499f123);
+        
+
+        circle_marker_cea26e27609a46008c283400cc3b6e2a.bindPopup(popup_86b40a36d853493e9c1bcf066706a803)
+        ;
+
+        
+    
+    
+            var circle_marker_a524cfd6aef64e619d1fa132fd7d9170 = L.circleMarker(
+                [44.4299011, -110.6709976],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_0579a9c83b104dd4a58d49fa1fe5c8dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67f6ca34830f406bab6ba66ea92a021f = $(`<div id="html_67f6ca34830f406bab6ba66ea92a021f" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:44.4299011, long:-110.6709976, elevation:2805.0</div>`)[0];
+            popup_0579a9c83b104dd4a58d49fa1fe5c8dc.setContent(html_67f6ca34830f406bab6ba66ea92a021f);
+        
+
+        circle_marker_a524cfd6aef64e619d1fa132fd7d9170.bindPopup(popup_0579a9c83b104dd4a58d49fa1fe5c8dc)
+        ;
+
+        
+    
+    
+            var circle_marker_d879cba2df59465d97de684a3f119e33 = L.circleMarker(
+                [43.0998993, -118.7509995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_f7974c0c40f547e097884b5041ff7d64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41c1fd63d397466eb57643041525c341 = $(`<div id="html_41c1fd63d397466eb57643041525c341" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.0998993, long:-118.7509995, elevation:1435.0</div>`)[0];
+            popup_f7974c0c40f547e097884b5041ff7d64.setContent(html_41c1fd63d397466eb57643041525c341);
+        
+
+        circle_marker_d879cba2df59465d97de684a3f119e33.bindPopup(popup_f7974c0c40f547e097884b5041ff7d64)
+        ;
+
+        
+    
+    
+            var circle_marker_1a41d15ec6b94eab8df5cf32063d10b4 = L.circleMarker(
+                [43.1498985, -117.4710007],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_158f2f963e624c8baaa81d6d05099707 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_219798353b134f2d86f7e9e4143729e2 = $(`<div id="html_219798353b134f2d86f7e9e4143729e2" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.1498985, long:-117.4710007, elevation:1473.0</div>`)[0];
+            popup_158f2f963e624c8baaa81d6d05099707.setContent(html_219798353b134f2d86f7e9e4143729e2);
+        
+
+        circle_marker_1a41d15ec6b94eab8df5cf32063d10b4.bindPopup(popup_158f2f963e624c8baaa81d6d05099707)
+        ;
+
+        
+    
+    
+            var circle_marker_c4d94e6d3a794b0bad4d3057f925539f = L.circleMarker(
+                [42.9999008, -117.8010025],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_16737aa7fa554735b8c82e1c46d64c5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e210574cf9474bd78610566d54557544 = $(`<div id="html_e210574cf9474bd78610566d54557544" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:42.9999008, long:-117.8010025, elevation:1700.0</div>`)[0];
+            popup_16737aa7fa554735b8c82e1c46d64c5a.setContent(html_e210574cf9474bd78610566d54557544);
+        
+
+        circle_marker_c4d94e6d3a794b0bad4d3057f925539f.bindPopup(popup_16737aa7fa554735b8c82e1c46d64c5a)
+        ;
+
+        
+    
+    
+            var circle_marker_9cf02cad70b84271835f5d58ffd8906b = L.circleMarker(
+                [43.419899, -113.5009995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_ab9bcbffc45148d091c0f2f0d76d1863 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29bb73396f8449a5a5d9250c16cad6b0 = $(`<div id="html_29bb73396f8449a5a5d9250c16cad6b0" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.419899, long:-113.5009995, elevation:2005.0</div>`)[0];
+            popup_ab9bcbffc45148d091c0f2f0d76d1863.setContent(html_29bb73396f8449a5a5d9250c16cad6b0);
+        
+
+        circle_marker_9cf02cad70b84271835f5d58ffd8906b.bindPopup(popup_ab9bcbffc45148d091c0f2f0d76d1863)
+        ;
+
+        
+    
+    
+            var circle_marker_ef2e0bbcf5ac497eb765ea29a29a05a4 = L.circleMarker(
+                [43.4999008, -112.4509964],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_5f9cdf795a8b4445aa7a035ab6cf8910 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2ea4ece5031459ca7650301b16e0250 = $(`<div id="html_b2ea4ece5031459ca7650301b16e0250" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.4999008, long:-112.4509964, elevation:1631.0</div>`)[0];
+            popup_5f9cdf795a8b4445aa7a035ab6cf8910.setContent(html_b2ea4ece5031459ca7650301b16e0250);
+        
+
+        circle_marker_ef2e0bbcf5ac497eb765ea29a29a05a4.bindPopup(popup_5f9cdf795a8b4445aa7a035ab6cf8910)
+        ;
+
+        
+    
+    
+            var circle_marker_1cb7f96eba8340dfa369a0b8d895f37d = L.circleMarker(
+                [43.1799011, -114.3509979],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_c9f373961e11428083be661b12d876b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbef6fb45ee54fb3b8d99dcfa213385d = $(`<div id="html_cbef6fb45ee54fb3b8d99dcfa213385d" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:43.1799011, long:-114.3509979, elevation:1478.0</div>`)[0];
+            popup_c9f373961e11428083be661b12d876b1.setContent(html_cbef6fb45ee54fb3b8d99dcfa213385d);
+        
+
+        circle_marker_1cb7f96eba8340dfa369a0b8d895f37d.bindPopup(popup_c9f373961e11428083be661b12d876b1)
+        ;
+
+        
+    
+    
+            var circle_marker_ab8fa8fbd0b8410aa2e8f0ae210da2f9 = L.circleMarker(
+                [42.6058998, -117.5810013],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_00ab60269d69417581f7f5305a3aea8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ba36a1e2119404898b8dd942de4f3dd = $(`<div id="html_4ba36a1e2119404898b8dd942de4f3dd" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:42.6058998, long:-117.5810013, elevation:1418.0</div>`)[0];
+            popup_00ab60269d69417581f7f5305a3aea8f.setContent(html_4ba36a1e2119404898b8dd942de4f3dd);
+        
+
+        circle_marker_ab8fa8fbd0b8410aa2e8f0ae210da2f9.bindPopup(popup_00ab60269d69417581f7f5305a3aea8f)
+        ;
+
+        
+    
+    
+            var circle_marker_87ae411747f542c8a88accb21bd95290 = L.circleMarker(
+                [41.5798988, -121.5709991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_0e41f16277dd4c61a47c8c4110a04206 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_361b1f0715e448078afd7597a0e13fe6 = $(`<div id="html_361b1f0715e448078afd7597a0e13fe6" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:41.5798988, long:-121.5709991, elevation:2412.0</div>`)[0];
+            popup_0e41f16277dd4c61a47c8c4110a04206.setContent(html_361b1f0715e448078afd7597a0e13fe6);
+        
+
+        circle_marker_87ae411747f542c8a88accb21bd95290.bindPopup(popup_0e41f16277dd4c61a47c8c4110a04206)
+        ;
+
+        
+    
+    
+            var circle_marker_714c4cde264044e3a7c1092a79272344 = L.circleMarker(
+                [42.8799019, -113.2210007],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_c4b370534c6a4578af36f9842f613026 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a72ba2d0ff0c42618fadefce7528efd9 = $(`<div id="html_a72ba2d0ff0c42618fadefce7528efd9" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:42.8799019, long:-113.2210007, elevation:1604.0</div>`)[0];
+            popup_c4b370534c6a4578af36f9842f613026.setContent(html_a72ba2d0ff0c42618fadefce7528efd9);
+        
+
+        circle_marker_714c4cde264044e3a7c1092a79272344.bindPopup(popup_c4b370534c6a4578af36f9842f613026)
+        ;
+
+        
+    
+    
+            var circle_marker_abebe9008d7d476989980432503a5895 = L.circleMarker(
+                [41.419899, -122.2009964],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_c6a7fa1856ea4680ab36657cd5218cff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb4813bb10ae49ee8d187939e21ebb76 = $(`<div id="html_eb4813bb10ae49ee8d187939e21ebb76" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:41.419899, long:-122.2009964, elevation:4317.0</div>`)[0];
+            popup_c6a7fa1856ea4680ab36657cd5218cff.setContent(html_eb4813bb10ae49ee8d187939e21ebb76);
+        
+
+        circle_marker_abebe9008d7d476989980432503a5895.bindPopup(popup_c6a7fa1856ea4680ab36657cd5218cff)
+        ;
+
+        
+    
+    
+            var circle_marker_e3e5da2baf3f4cd792ef494035a9dffd = L.circleMarker(
+                [41.1778984, -121.4410019],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_183480d4c35b429dac0b765c0493a8bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a329caf0b3bc4c1db3a83d54519e2138 = $(`<div id="html_a329caf0b3bc4c1db3a83d54519e2138" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:41.1778984, long:-121.4410019, elevation:1174.0</div>`)[0];
+            popup_183480d4c35b429dac0b765c0493a8bf.setContent(html_a329caf0b3bc4c1db3a83d54519e2138);
+        
+
+        circle_marker_e3e5da2baf3f4cd792ef494035a9dffd.bindPopup(popup_183480d4c35b429dac0b765c0493a8bf)
+        ;
+
+        
+    
+    
+            var circle_marker_b8ed303b70044c9cbc297bfbaf2380cf = L.circleMarker(
+                [40.9548988, -121.3610001],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_5eb0e4dc9c9a4ca5b9e51ac1527a990a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3590ef594c214c0e809316748382a1ae = $(`<div id="html_3590ef594c214c0e809316748382a1ae" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:40.9548988, long:-121.3610001, elevation:1259.0</div>`)[0];
+            popup_5eb0e4dc9c9a4ca5b9e51ac1527a990a.setContent(html_3590ef594c214c0e809316748382a1ae);
+        
+
+        circle_marker_b8ed303b70044c9cbc297bfbaf2380cf.bindPopup(popup_5eb0e4dc9c9a4ca5b9e51ac1527a990a)
+        ;
+
+        
+    
+    
+            var circle_marker_b72f3b431e354b87a44b1b39a503939c = L.circleMarker(
+                [40.7798996, -121.6009979],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_ff2a030ce5f04e7c8408c9994655f5a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9ba1bb481b8440b9370093c809f3e40 = $(`<div id="html_a9ba1bb481b8440b9370093c809f3e40" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:40.7798996, long:-121.6009979, elevation:1631.0</div>`)[0];
+            popup_ff2a030ce5f04e7c8408c9994655f5a5.setContent(html_a9ba1bb481b8440b9370093c809f3e40);
+        
+
+        circle_marker_b72f3b431e354b87a44b1b39a503939c.bindPopup(popup_ff2a030ce5f04e7c8408c9994655f5a5)
+        ;
+
+        
+    
+    
+            var circle_marker_1b10a97bf179493fb08bd61861cb1ba9 = L.circleMarker(
+                [40.6799011, -121.5510025],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_3dede6d6569949d0b1250d158c7de705 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c40f4d88acf4568a9e95fa2a5a20668 = $(`<div id="html_0c40f4d88acf4568a9e95fa2a5a20668" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:40.6799011, long:-121.5510025, elevation:2191.0</div>`)[0];
+            popup_3dede6d6569949d0b1250d158c7de705.setContent(html_0c40f4d88acf4568a9e95fa2a5a20668);
+        
+
+        circle_marker_1b10a97bf179493fb08bd61861cb1ba9.bindPopup(popup_3dede6d6569949d0b1250d158c7de705)
+        ;
+
+        
+    
+    
+            var circle_marker_8a8cf7cbab9e4ae19c901468e8f1d055 = L.circleMarker(
+                [40.6299019, -120.8310013],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_4bac9520225f465d94e7178cd117c4c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_906003c5a0eb4d81bae4f4c01961429f = $(`<div id="html_906003c5a0eb4d81bae4f4c01961429f" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:40.6299019, long:-120.8310013, elevation:1652.0</div>`)[0];
+            popup_4bac9520225f465d94e7178cd117c4c1.setContent(html_906003c5a0eb4d81bae4f4c01961429f);
+        
+
+        circle_marker_8a8cf7cbab9e4ae19c901468e8f1d055.bindPopup(popup_4bac9520225f465d94e7178cd117c4c1)
+        ;
+
+        
+    
+    
+            var circle_marker_6e92172116314d60983ed61a01e6adf4 = L.circleMarker(
+                [40.4919014, -121.5009995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_d978a99e97fb4285ac6ae0ffa9cebeb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_118d4cc429864cef926027fa30dfcbe7 = $(`<div id="html_118d4cc429864cef926027fa30dfcbe7" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:40.4919014, long:-121.5009995, elevation:3187.0</div>`)[0];
+            popup_d978a99e97fb4285ac6ae0ffa9cebeb0.setContent(html_118d4cc429864cef926027fa30dfcbe7);
+        
+
+        circle_marker_6e92172116314d60983ed61a01e6adf4.bindPopup(popup_d978a99e97fb4285ac6ae0ffa9cebeb0)
+        ;
+
+        
+    
+    
+            var circle_marker_aa99a70e30d647cfb53adf19d6206f29 = L.circleMarker(
+                [38.9698982, -122.7710037],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_cdf29916acd24aa8b35b4b067c7ff762 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01cbb4b0f4e742a5918bbaef7e4f101c = $(`<div id="html_01cbb4b0f4e742a5918bbaef7e4f101c" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:38.9698982, long:-122.7710037, elevation:1439.0</div>`)[0];
+            popup_cdf29916acd24aa8b35b4b067c7ff762.setContent(html_01cbb4b0f4e742a5918bbaef7e4f101c);
+        
+
+        circle_marker_aa99a70e30d647cfb53adf19d6206f29.bindPopup(popup_cdf29916acd24aa8b35b4b067c7ff762)
+        ;
+
+        
+    
+    
+            var circle_marker_cb1e6c8a8b504e2199853e7a3aa37ca4 = L.circleMarker(
+                [39.3749008, -119.7210007],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_40c732c670ae43e785d0a0c1ee6f77df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f46d5c3a6264ccda0a36c8a35650322 = $(`<div id="html_6f46d5c3a6264ccda0a36c8a35650322" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:39.3749008, long:-119.7210007, elevation:1415.0</div>`)[0];
+            popup_40c732c670ae43e785d0a0c1ee6f77df.setContent(html_6f46d5c3a6264ccda0a36c8a35650322);
+        
+
+        circle_marker_cb1e6c8a8b504e2199853e7a3aa37ca4.bindPopup(popup_40c732c670ae43e785d0a0c1ee6f77df)
+        ;
+
+        
+    
+    
+            var circle_marker_05d3e9a0d412417c9d7409e27f0a9ae5 = L.circleMarker(
+                [39.6500015, -107.0309982],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_7634eb97646d42cf84b33398efe04b3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75f1e2c4eedb4326b6cc588fbb5827fb = $(`<div id="html_75f1e2c4eedb4326b6cc588fbb5827fb" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:39.6500015, long:-107.0309982, elevation:2230.0</div>`)[0];
+            popup_7634eb97646d42cf84b33398efe04b3a.setContent(html_75f1e2c4eedb4326b6cc588fbb5827fb);
+        
+
+        circle_marker_05d3e9a0d412417c9d7409e27f0a9ae5.bindPopup(popup_7634eb97646d42cf84b33398efe04b3a)
+        ;
+
+        
+    
+    
+            var circle_marker_9867ebbbc1d94b0a89377262d6003f28 = L.circleMarker(
+                [37.9999008, -119.0309982],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_d6a7d66edd974e2aa9249710af48051e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_282997e858ab400da5076cdc7698e0ad = $(`<div id="html_282997e858ab400da5076cdc7698e0ad" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.9999008, long:-119.0309982, elevation:2121.0</div>`)[0];
+            popup_d6a7d66edd974e2aa9249710af48051e.setContent(html_282997e858ab400da5076cdc7698e0ad);
+        
+
+        circle_marker_9867ebbbc1d94b0a89377262d6003f28.bindPopup(popup_d6a7d66edd974e2aa9249710af48051e)
+        ;
+
+        
+    
+    
+            var circle_marker_89babe1f2cc34eeea6d5c20bc1b8ff8e = L.circleMarker(
+                [38.9700012, -112.5009995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_772656a3eece4771ad956e53d224d445 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a11f3d8207e445a48cffa012e5fa832c = $(`<div id="html_a11f3d8207e445a48cffa012e5fa832c" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:38.9700012, long:-112.5009995, elevation:1800.0</div>`)[0];
+            popup_772656a3eece4771ad956e53d224d445.setContent(html_a11f3d8207e445a48cffa012e5fa832c);
+        
+
+        circle_marker_89babe1f2cc34eeea6d5c20bc1b8ff8e.bindPopup(popup_772656a3eece4771ad956e53d224d445)
+        ;
+
+        
+    
+    
+            var circle_marker_2c48b0f907794e3aaf3d90fbee48cf60 = L.circleMarker(
+                [37.8799019, -119.0009995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_ef85cfeac67040ebaddba94a85ff0132 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c2d3bad11bd46f9a4e94ffd15cdb3d5 = $(`<div id="html_8c2d3bad11bd46f9a4e94ffd15cdb3d5" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.8799019, long:-119.0009995, elevation:2796.0</div>`)[0];
+            popup_ef85cfeac67040ebaddba94a85ff0132.setContent(html_8c2d3bad11bd46f9a4e94ffd15cdb3d5);
+        
+
+        circle_marker_2c48b0f907794e3aaf3d90fbee48cf60.bindPopup(popup_ef85cfeac67040ebaddba94a85ff0132)
+        ;
+
+        
+    
+    
+            var circle_marker_12d0515217ee4661b857d0008b0ea9cd = L.circleMarker(
+                [37.6918983, -119.0210037],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_e26bcea7ede94cb8acc749131f94dfdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_100a1f08564a45e1b9fa6f82ca489889 = $(`<div id="html_100a1f08564a45e1b9fa6f82ca489889" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.6918983, long:-119.0210037, elevation:2629.0</div>`)[0];
+            popup_e26bcea7ede94cb8acc749131f94dfdb.setContent(html_100a1f08564a45e1b9fa6f82ca489889);
+        
+
+        circle_marker_12d0515217ee4661b857d0008b0ea9cd.bindPopup(popup_e26bcea7ede94cb8acc749131f94dfdb)
+        ;
+
+        
+    
+    
+            var circle_marker_ade69f20c8e64e238d5007f66e277d3c = L.circleMarker(
+                [37.6999016, -118.8710022],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_96e679967a1d47d7bee84e37443f2f15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b132209fdc5e478184521975c33743f1 = $(`<div id="html_b132209fdc5e478184521975c33743f1" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.6999016, long:-118.8710022, elevation:3390.0</div>`)[0];
+            popup_96e679967a1d47d7bee84e37443f2f15.setContent(html_b132209fdc5e478184521975c33743f1);
+        
+
+        circle_marker_ade69f20c8e64e238d5007f66e277d3c.bindPopup(popup_96e679967a1d47d7bee84e37443f2f15)
+        ;
+
+        
+    
+    
+            var circle_marker_aafd79d93e904530975c8f6cead7fad2 = L.circleMarker(
+                [37.5798988, -119.0510025],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_0c5ad5de12dd4c0d847fabfeffc3fba9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67376816d8714eab984d171b1e24df05 = $(`<div id="html_67376816d8714eab984d171b1e24df05" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.5798988, long:-119.0510025, elevation:2748.0</div>`)[0];
+            popup_0c5ad5de12dd4c0d847fabfeffc3fba9.setContent(html_67376816d8714eab984d171b1e24df05);
+        
+
+        circle_marker_aafd79d93e904530975c8f6cead7fad2.bindPopup(popup_0c5ad5de12dd4c0d847fabfeffc3fba9)
+        ;
+
+        
+    
+    
+            var circle_marker_f67c55a40ac44ddcb3cd569a454a982c = L.circleMarker(
+                [37.0199013, -117.4509964],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_6f0a38c77a7e47548078a32f0d374a31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61ed9f1a8bd549ee87ca0b05078b4c73 = $(`<div id="html_61ed9f1a8bd549ee87ca0b05078b4c73" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.0199013, long:-117.4509964, elevation:752.0</div>`)[0];
+            popup_6f0a38c77a7e47548078a32f0d374a31.setContent(html_61ed9f1a8bd549ee87ca0b05078b4c73);
+        
+
+        circle_marker_f67c55a40ac44ddcb3cd569a454a982c.bindPopup(popup_6f0a38c77a7e47548078a32f0d374a31)
+        ;
+
+        
+    
+    
+            var circle_marker_4d9c0cdab2cb480a9050037ca78b0c1b = L.circleMarker(
+                [37.5800018, -112.6709976],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_e2b6d96c368748a89c9b7aa787d11311 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dbe33f3bfae4108a5fbfacdbe0ed482 = $(`<div id="html_0dbe33f3bfae4108a5fbfacdbe0ed482" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.5800018, long:-112.6709976, elevation:2840.0</div>`)[0];
+            popup_e2b6d96c368748a89c9b7aa787d11311.setContent(html_0dbe33f3bfae4108a5fbfacdbe0ed482);
+        
+
+        circle_marker_4d9c0cdab2cb480a9050037ca78b0c1b.bindPopup(popup_e2b6d96c368748a89c9b7aa787d11311)
+        ;
+
+        
+    
+    
+            var circle_marker_4c776cb6766448b0bf9de83e7a1589b6 = L.circleMarker(
+                [37.257, -113.6210022],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_0a9ca6bf804e4ba19e2b7ef5b415ca6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05afc872c6644eeaa9983b8a0363d39d = $(`<div id="html_05afc872c6644eeaa9983b8a0363d39d" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.257, long:-113.6210022, elevation:1465.0</div>`)[0];
+            popup_0a9ca6bf804e4ba19e2b7ef5b415ca6a.setContent(html_05afc872c6644eeaa9983b8a0363d39d);
+        
+
+        circle_marker_4c776cb6766448b0bf9de83e7a1589b6.bindPopup(popup_0a9ca6bf804e4ba19e2b7ef5b415ca6a)
+        ;
+
+        
+    
+    
+            var circle_marker_1da9c21737d24ea79bb74a0e1ee576c7 = L.circleMarker(
+                [37.3279991, -112.401001],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_6062c45fee3d4656ad71a5ae3e61d45b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69c89db4fa7a4e259b4cf3c78e58584f = $(`<div id="html_69c89db4fa7a4e259b4cf3c78e58584f" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:37.3279991, long:-112.401001, elevation:2135.0</div>`)[0];
+            popup_6062c45fee3d4656ad71a5ae3e61d45b.setContent(html_69c89db4fa7a4e259b4cf3c78e58584f);
+        
+
+        circle_marker_1da9c21737d24ea79bb74a0e1ee576c7.bindPopup(popup_6062c45fee3d4656ad71a5ae3e61d45b)
+        ;
+
+        
+    
+    
+            var circle_marker_cb6af576479847c2bc8102184a1d2aac = L.circleMarker(
+                [36.3578987, -118.3209991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_ff4feb903164462f91e94cd0b46eee8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af98c78904cb415d9cf3bc3858106f94 = $(`<div id="html_af98c78904cb415d9cf3bc3858106f94" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:36.3578987, long:-118.3209991, elevation:2886.0</div>`)[0];
+            popup_ff4feb903164462f91e94cd0b46eee8a.setContent(html_af98c78904cb415d9cf3bc3858106f94);
+        
+
+        circle_marker_cb6af576479847c2bc8102184a1d2aac.bindPopup(popup_ff4feb903164462f91e94cd0b46eee8a)
+        ;
+
+        
+    
+    
+            var circle_marker_a50cd05e94da4aac8e6fde3e6f1932cd = L.circleMarker(
+                [36.0298996, -117.8209991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_f646c3a6c14348bb959daadcce97569d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b62adefad6b4385bc5c5408ec6ba572 = $(`<div id="html_7b62adefad6b4385bc5c5408ec6ba572" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:36.0298996, long:-117.8209991, elevation:2400.0</div>`)[0];
+            popup_f646c3a6c14348bb959daadcce97569d.setContent(html_7b62adefad6b4385bc5c5408ec6ba572);
+        
+
+        circle_marker_a50cd05e94da4aac8e6fde3e6f1932cd.bindPopup(popup_f646c3a6c14348bb959daadcce97569d)
+        ;
+
+        
+    
+    
+            var circle_marker_4a8f2d27eff4400a84b447fd97c39dbf = L.circleMarker(
+                [36.3800011, -113.1309967],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_0034e23015894fbbaa907ef1919d32fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eec6d59fa92741c5a6513b4784b57b61 = $(`<div id="html_eec6d59fa92741c5a6513b4784b57b61" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:36.3800011, long:-113.1309967, elevation:1555.0</div>`)[0];
+            popup_0034e23015894fbbaa907ef1919d32fe.setContent(html_eec6d59fa92741c5a6513b4784b57b61);
+        
+
+        circle_marker_4a8f2d27eff4400a84b447fd97c39dbf.bindPopup(popup_0034e23015894fbbaa907ef1919d32fe)
+        ;
+
+        
+    
+    
+            var circle_marker_ca614e6c57e0454c939f6534a7cd9b84 = L.circleMarker(
+                [34.75, -116.6210022],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_65d300930c9f42adab10b4c483253467 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9af05badc4a486eb65ba046ab12ad6f = $(`<div id="html_e9af05badc4a486eb65ba046ab12ad6f" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:34.75, long:-116.6210022, elevation:1495.0</div>`)[0];
+            popup_65d300930c9f42adab10b4c483253467.setContent(html_e9af05badc4a486eb65ba046ab12ad6f);
+        
+
+        circle_marker_ca614e6c57e0454c939f6534a7cd9b84.bindPopup(popup_65d300930c9f42adab10b4c483253467)
+        ;
+
+        
+    
+    
+            var circle_marker_3acd12903d1f4380a83af690de9d3fd5 = L.circleMarker(
+                [35.8699989, -106.5709991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_34d27df510aa40788fb4e98157823d71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a8bdb3654a94204b8d1aa067ff62752 = $(`<div id="html_7a8bdb3654a94204b8d1aa067ff62752" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:35.8699989, long:-106.5709991, elevation:3430.0</div>`)[0];
+            popup_34d27df510aa40788fb4e98157823d71.setContent(html_7a8bdb3654a94204b8d1aa067ff62752);
+        
+
+        circle_marker_3acd12903d1f4380a83af690de9d3fd5.bindPopup(popup_34d27df510aa40788fb4e98157823d71)
+        ;
+
+        
+    
+    
+            var circle_marker_804a0c3be1d54fefab116c7c55020639 = L.circleMarker(
+                [35.3699989, -111.5009995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_4920e7b64970406bbb6c701e943a78d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_356296247ea2481da51cc01bdd5b5876 = $(`<div id="html_356296247ea2481da51cc01bdd5b5876" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:35.3699989, long:-111.5009995, elevation:2447.0</div>`)[0];
+            popup_4920e7b64970406bbb6c701e943a78d6.setContent(html_356296247ea2481da51cc01bdd5b5876);
+        
+
+        circle_marker_804a0c3be1d54fefab116c7c55020639.bindPopup(popup_4920e7b64970406bbb6c701e943a78d6)
+        ;
+
+        
+    
+    
+            var circle_marker_fa0c086082684c169bdb17cd36f83923 = L.circleMarker(
+                [34.5499992, -115.7809982],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_fbf81f9d7f0147a784cfccd3edf468ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c60e1e9e6c6d4775ad8d3572bb3c64a3 = $(`<div id="html_c60e1e9e6c6d4775ad8d3572bb3c64a3" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:34.5499992, long:-115.7809982, elevation:288.0</div>`)[0];
+            popup_fbf81f9d7f0147a784cfccd3edf468ce.setContent(html_c60e1e9e6c6d4775ad8d3572bb3c64a3);
+        
+
+        circle_marker_fa0c086082684c169bdb17cd36f83923.bindPopup(popup_fbf81f9d7f0147a784cfccd3edf468ce)
+        ;
+
+        
+    
+    
+            var circle_marker_42a638f5dddc4ca89c0978958f189034 = L.circleMarker(
+                [34.7999992, -108.0009995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_9df19f01bff34f4da599fc8b162abb09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ada6981c7ea24103b82f6558c9b629b9 = $(`<div id="html_ada6981c7ea24103b82f6558c9b629b9" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:34.7999992, long:-108.0009995, elevation:2550.0</div>`)[0];
+            popup_9df19f01bff34f4da599fc8b162abb09.setContent(html_ada6981c7ea24103b82f6558c9b629b9);
+        
+
+        circle_marker_42a638f5dddc4ca89c0978958f189034.bindPopup(popup_9df19f01bff34f4da599fc8b162abb09)
+        ;
+
+        
+    
+    
+            var circle_marker_1612e28a42cb4adda713efa24dc5281b = L.circleMarker(
+                [33.7801018, -105.9309998],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6369ec89484b4ce395f90d9f50c81a4e);
+        
+    
+        var popup_b180f58013d84a3db32cb17f033f4dbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cce247bd6b544688d76435bdc219153 = $(`<div id="html_8cce247bd6b544688d76435bdc219153" style="width: 100.0%; height: 100.0%;">Earthquake at: lat:33.7801018, long:-105.9309998, elevation:1731.0</div>`)[0];
+            popup_b180f58013d84a3db32cb17f033f4dbb.setContent(html_8cce247bd6b544688d76435bdc219153);
+        
+
+        circle_marker_1612e28a42cb4adda713efa24dc5281b.bindPopup(popup_b180f58013d84a3db32cb17f033f4dbb)
+        ;
+
+        
+    
+</script>
